@@ -1,0 +1,7 @@
+{
+  "templates": [{
+    "name": "webpack",
+    "description": "创建基于webpack构建工具的项目",
+    "path": ""
+  }]
+}

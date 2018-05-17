@@ -1,0 +1,29 @@
+{
+  "name": "cli-wei",
+  "version": "1.0.2",
+  "description": "This is a cli project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "weieyuan",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.6.0",
+    "chalk": "^2.4.1",
+    "commander": "^2.15.1",
+    "consolidate": "^0.15.1",
+    "handlebars": "^4.0.11",
+    "inquirer": "^5.2.0",
+    "metalsmith": "^2.3.0",
+    "ora": "^2.1.0",
+    "read-metadata": "^1.0.0"
+  },
+  "devDependencies": {},
+  "bin": {
+    "cli-wei": "index"
+  }
+}

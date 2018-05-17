@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+
+var program = require("commander");
+var package = require("./package.json");
+var list = require("./list.js");
+var init = require("./init.js");
+var test = require("./test/test.js");
+
+program
+    .version(package.version)
+    .usage("<command> [options]");
+
+//展示可用的模板
+program
+    .command("list")
+    .alias("i")
+    .description("显示可用的模板信息")
+    .action(function () {
+        list();
+    });
+
+//初始化项目
+program
+    .command("init <template> [project-name]")
+    .description("使用模板创建新项目")
+    .action(function (template, prjName) {
+        init(template, prjName);
+    });
+
+program
+    .command("test")
+    .alias("t")
+    .description("测试")
+    .action(function () {
+        test();
+    });
+
+program.parse(process.argv);
+if (program.args.length == 0) {
+    program.help();
+}
