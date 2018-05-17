@@ -1,3 +1,16 @@
+## cli-wei
+学习vue-cli源码后，参考着写了个脚手架工具，目前仅支持本地模板，后续进一步完善功能。
+
+## 使用
+#### 安装
+```
+npm install cli-wei -g
+```
+#### 常用命令
+```
+cli-wei <模板的路径> <项目名称>
+```
+
 ## 常用的包
 * commander
 命令行工具
@@ -25,13 +38,3 @@ command(rmdir <dir> [...otherDir])
 
 * handlebars
 一种模板引擎
-
-## 使用
-#### 安装
-```
-npm install cli-wei -g
-```
-#### 常用命令
-```
-cli-wei <模板的路径> <项目名称>
-```
